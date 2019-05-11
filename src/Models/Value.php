@@ -29,7 +29,7 @@ class Value extends Model implements EntityContract
      */
     public function key(): BelongsTo
     {
-        return $this->belongsTo(Taxonomy::class);
+        return $this->belongsTo(config('amethyst.taxonomy.data.taxonomy.model'));
     }
 
     /**
