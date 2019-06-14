@@ -28,9 +28,5 @@ class ValueServiceProvider extends CommonServiceProvider
     public function boot()
     {
         parent::boot();
-
-        \Illuminate\Database\Eloquent\Builder::macro('values', function (): MorphMany {
-            return app('amethyst')->createMacroMorphRelation($this, \Railken\Amethyst\Models\Value::class, 'values', 'valuable');
-        });
     }
 }
