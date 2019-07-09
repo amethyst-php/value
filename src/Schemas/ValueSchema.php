@@ -1,6 +1,6 @@
 <?php
 
-namespace Railken\Amethyst\Schemas;
+namespace Amethyst\Schemas;
 
 use Railken\Lem\Attributes;
 use Railken\Lem\Schema;
@@ -16,7 +16,7 @@ class ValueSchema extends Schema
     {
         return [
             Attributes\IdAttribute::make(),
-            \Railken\Amethyst\Attributes\TaxonomyAttribute::make('key_id', app('amethyst.taxonomy')->get('value.key'))
+            \Amethyst\Attributes\TaxonomyAttribute::make('key_id', app('amethyst.taxonomy')->get('value.key'))
                 ->setRelationName('key')
                 ->setRequired(true),
             Attributes\EnumAttribute::make('valuable_type', app('amethyst')->getMorphListable('value', 'valuable')),

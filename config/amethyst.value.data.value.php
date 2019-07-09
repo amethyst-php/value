@@ -3,14 +3,14 @@
 return [
     'table'      => 'amethyst_values',
     'comment'    => 'Value',
-    'model'      => Railken\Amethyst\Models\Value::class,
-    'schema'     => Railken\Amethyst\Schemas\ValueSchema::class,
-    'repository' => Railken\Amethyst\Repositories\ValueRepository::class,
-    'serializer' => Railken\Amethyst\Serializers\ValueSerializer::class,
-    'validator'  => Railken\Amethyst\Validators\ValueValidator::class,
-    'authorizer' => Railken\Amethyst\Authorizers\ValueAuthorizer::class,
-    'faker'      => Railken\Amethyst\Fakers\ValueFaker::class,
-    'manager'    => Railken\Amethyst\Managers\ValueManager::class,
+    'model'      => Amethyst\Models\Value::class,
+    'schema'     => Amethyst\Schemas\ValueSchema::class,
+    'repository' => Amethyst\Repositories\ValueRepository::class,
+    'serializer' => Amethyst\Serializers\ValueSerializer::class,
+    'validator'  => Amethyst\Validators\ValueValidator::class,
+    'authorizer' => Amethyst\Authorizers\ValueAuthorizer::class,
+    'faker'      => Amethyst\Fakers\ValueFaker::class,
+    'manager'    => Amethyst\Managers\ValueManager::class,
     'attributes' => [
         'key' => [
             'taxonomy' => 'Value Key',

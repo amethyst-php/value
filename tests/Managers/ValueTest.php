@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Managers;
+namespace Amethyst\Tests\Managers;
 
-use Railken\Amethyst\Fakers\ValueFaker;
-use Railken\Amethyst\Managers\ValueManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Fakers\ValueFaker;
+use Amethyst\Managers\ValueManager;
+use Amethyst\Tests\BaseTest;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
 class ValueTest extends BaseTest

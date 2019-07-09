@@ -1,9 +1,9 @@
 <?php
 
-namespace Railken\Amethyst\Providers;
+namespace Amethyst\Providers;
 
 use Illuminate\Support\Facades\Config;
-use Railken\Amethyst\Common\CommonServiceProvider;
+use Amethyst\Common\CommonServiceProvider;
 
 class ValueServiceProvider extends CommonServiceProvider
 {
@@ -14,7 +14,7 @@ class ValueServiceProvider extends CommonServiceProvider
     {
         parent::register();
 
-        $this->app->register(\Railken\Amethyst\Providers\TaxonomyServiceProvider::class);
+        $this->app->register(\Amethyst\Providers\TaxonomyServiceProvider::class);
 
         app('amethyst.taxonomy')->add('value.key', Config::get('amethyst.value.data.value.attributes.key.taxonomy'), [
             'basic',
