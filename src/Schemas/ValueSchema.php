@@ -19,7 +19,7 @@ class ValueSchema extends Schema
             \Amethyst\Attributes\TaxonomyAttribute::make('key_id', app('amethyst.taxonomy')->get('value.key'))
                 ->setRelationName('key')
                 ->setRequired(true),
-            Attributes\EnumAttribute::make('valuable_type', app('amethyst')->getDataNames()),
+            \Amethyst\Core\Attributes\DataNameAttribute::make('valuable_type'),
             Attributes\MorphToAttribute::make('valuable_id')
                 ->setRelationKey('valuable_type')
                 ->setRelationName('valuable')
